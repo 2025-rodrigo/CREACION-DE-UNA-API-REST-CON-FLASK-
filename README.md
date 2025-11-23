@@ -18,6 +18,7 @@ el servidor ejecuta una función que consulta la tabla correspondiente y devuelv
 El método POST se utiliza para agregar un nuevo registro a la base de datos.
 El cliente envía datos en formato JSON a la ruta:
 POST /users
+
 incluyendo los campos requeridos (por ejemplo: id, name, email).
 La API valida que los datos estén completos y que el identificador no exista previamente. Si las condiciones se cumplen, el registro es insertado en la base de datos.
 
@@ -26,6 +27,7 @@ La API valida que los datos estén completos y que el identificador no exista pr
 El método PUT permite modificar los datos de un registro ya existente.
 La solicitud se envía a una ruta con el ID del recurso:
 PUT /users/<id>
+
 El cliente envía en el cuerpo JSON los campos a actualizar.
 La API verifica primero que el registro exista; si es así, procede a actualizar los datos indicados. Si el ID no se encuentra en la base de datos, se devuelve un error.
 
