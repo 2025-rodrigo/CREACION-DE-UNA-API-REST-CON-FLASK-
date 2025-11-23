@@ -9,7 +9,7 @@ Para verificar el correcto funcionamiento de la API, se utilizaron pruebas reali
 
 El método GET permite recuperar todos los registros almacenados en la base de datos.
 Cuando el cliente realiza una solicitud a la ruta:
-GET /users
+GET /users.
 el servidor ejecuta una función que consulta la tabla correspondiente y devuelve una lista en formato JSON con todos los elementos registrados. En caso de no existir registros, se retorna una lista vacía. Este método no requiere un cuerpo en la solicitud y es utilizado principalmente para visualizar el estado actual de la información.
 
 2. Método POST — Crear un nuevo registro
